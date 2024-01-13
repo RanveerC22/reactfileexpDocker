@@ -1,0 +1,9 @@
+sudo: required
+services:
+  - docker
+
+before_install:
+  - docker build -t reactfiletravis .
+
+script:
+  - docker run -p '3005:3000' reactfiletravis 
