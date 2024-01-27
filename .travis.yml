@@ -6,4 +6,4 @@ before_install:
   - docker build -t reactfiletravis .
 
 script:
-  - docker run -p 3505:3000 ls
+  - docker run -it reactfiletravis ls
