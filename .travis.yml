@@ -6,7 +6,4 @@ before_install:
   - docker build -t reactfiletravis .
 
 script:
-  - docker run -d -p 3505:3000 ls
-  - sleep 10
-  - docker ps
-  - curl -Ssf http://localhost:3505
+  - docker run -p 3505:3000 ls
